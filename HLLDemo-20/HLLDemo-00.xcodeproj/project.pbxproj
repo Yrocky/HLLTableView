@@ -14,9 +14,12 @@
 		D7E17B511C99A1AF008973D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7E17B501C99A1AF008973D7 /* Assets.xcassets */; };
 		D7E17B541C99A1AF008973D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7E17B521C99A1AF008973D7 /* LaunchScreen.storyboard */; };
 		D7E17B5F1C99A1AF008973D7 /* HLLDemo_00UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E17B5E1C99A1AF008973D7 /* HLLDemo_00UITests.m */; };
-		D7E17B6B1C99B66B008973D7 /* HLLRegion.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E17B6A1C99B66B008973D7 /* HLLRegion.m */; };
-		D7E17B6E1C99B674008973D7 /* HLLTimeZone.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E17B6D1C99B674008973D7 /* HLLTimeZone.m */; };
-		D7E17B711C99B80C008973D7 /* HLLTimeZoneManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E17B701C99B80C008973D7 /* HLLTimeZoneManager.m */; };
+		D7E17B861C9AEE50008973D7 /* HLLSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E17B781C9AEE50008973D7 /* HLLSectionHeaderView.m */; };
+		D7E17B871C9AEE50008973D7 /* HLLSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7E17B791C9AEE50008973D7 /* HLLSectionHeaderView.xib */; };
+		D7E17B881C9AEE50008973D7 /* HLLSectionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E17B7B1C9AEE50008973D7 /* HLLSectionInfo.m */; };
+		D7E17B8A1C9AEE50008973D7 /* HLLRegion.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E17B801C9AEE50008973D7 /* HLLRegion.m */; };
+		D7E17B8B1C9AEE50008973D7 /* HLLTimeZone.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E17B821C9AEE50008973D7 /* HLLTimeZone.m */; };
+		D7E17B8C1C9AEE50008973D7 /* HLLTimeZoneManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E17B841C9AEE50008973D7 /* HLLTimeZoneManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,12 +46,17 @@
 		D7E17B5A1C99A1AF008973D7 /* HLLDemo-00UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HLLDemo-00UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7E17B5E1C99A1AF008973D7 /* HLLDemo_00UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLLDemo_00UITests.m; sourceTree = "<group>"; };
 		D7E17B601C99A1AF008973D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D7E17B691C99B66B008973D7 /* HLLRegion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLRegion.h; sourceTree = "<group>"; };
-		D7E17B6A1C99B66B008973D7 /* HLLRegion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLRegion.m; sourceTree = "<group>"; };
-		D7E17B6C1C99B674008973D7 /* HLLTimeZone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLTimeZone.h; sourceTree = "<group>"; };
-		D7E17B6D1C99B674008973D7 /* HLLTimeZone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLTimeZone.m; sourceTree = "<group>"; };
-		D7E17B6F1C99B80C008973D7 /* HLLTimeZoneManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLTimeZoneManager.h; sourceTree = "<group>"; };
-		D7E17B701C99B80C008973D7 /* HLLTimeZoneManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLTimeZoneManager.m; sourceTree = "<group>"; };
+		D7E17B771C9AEE50008973D7 /* HLLSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLSectionHeaderView.h; sourceTree = "<group>"; };
+		D7E17B781C9AEE50008973D7 /* HLLSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLSectionHeaderView.m; sourceTree = "<group>"; };
+		D7E17B791C9AEE50008973D7 /* HLLSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLLSectionHeaderView.xib; sourceTree = "<group>"; };
+		D7E17B7A1C9AEE50008973D7 /* HLLSectionInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLSectionInfo.h; sourceTree = "<group>"; };
+		D7E17B7B1C9AEE50008973D7 /* HLLSectionInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLSectionInfo.m; sourceTree = "<group>"; };
+		D7E17B7F1C9AEE50008973D7 /* HLLRegion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLRegion.h; sourceTree = "<group>"; };
+		D7E17B801C9AEE50008973D7 /* HLLRegion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLRegion.m; sourceTree = "<group>"; };
+		D7E17B811C9AEE50008973D7 /* HLLTimeZone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLTimeZone.h; sourceTree = "<group>"; };
+		D7E17B821C9AEE50008973D7 /* HLLTimeZone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLTimeZone.m; sourceTree = "<group>"; };
+		D7E17B831C9AEE50008973D7 /* HLLTimeZoneManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLTimeZoneManager.h; sourceTree = "<group>"; };
+		D7E17B841C9AEE50008973D7 /* HLLTimeZoneManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLTimeZoneManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,16 +102,9 @@
 				D7E17B481C99A1AF008973D7 /* AppDelegate.m */,
 				D7E17B4A1C99A1AF008973D7 /* ViewController.h */,
 				D7E17B4B1C99A1AF008973D7 /* ViewController.m */,
-				D7E17B6F1C99B80C008973D7 /* HLLTimeZoneManager.h */,
-				D7E17B701C99B80C008973D7 /* HLLTimeZoneManager.m */,
-				D7E17B691C99B66B008973D7 /* HLLRegion.h */,
-				D7E17B6A1C99B66B008973D7 /* HLLRegion.m */,
-				D7E17B6C1C99B674008973D7 /* HLLTimeZone.h */,
-				D7E17B6D1C99B674008973D7 /* HLLTimeZone.m */,
-				D7E17B4D1C99A1AF008973D7 /* Main.storyboard */,
-				D7E17B501C99A1AF008973D7 /* Assets.xcassets */,
-				D7E17B521C99A1AF008973D7 /* LaunchScreen.storyboard */,
-				D7E17B551C99A1AF008973D7 /* Info.plist */,
+				D7E17B741C9AEE50008973D7 /* SectionHeader */,
+				D7E17B7E1C9AEE50008973D7 /* TimeZone */,
+				D7E17B731C9AED4B008973D7 /* Source */,
 				D7E17B441C99A1AF008973D7 /* Supporting Files */,
 			);
 			path = "HLLDemo-00";
@@ -124,6 +125,42 @@
 				D7E17B601C99A1AF008973D7 /* Info.plist */,
 			);
 			path = "HLLDemo-00UITests";
+			sourceTree = "<group>";
+		};
+		D7E17B731C9AED4B008973D7 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				D7E17B4D1C99A1AF008973D7 /* Main.storyboard */,
+				D7E17B501C99A1AF008973D7 /* Assets.xcassets */,
+				D7E17B521C99A1AF008973D7 /* LaunchScreen.storyboard */,
+				D7E17B551C99A1AF008973D7 /* Info.plist */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		D7E17B741C9AEE50008973D7 /* SectionHeader */ = {
+			isa = PBXGroup;
+			children = (
+				D7E17B771C9AEE50008973D7 /* HLLSectionHeaderView.h */,
+				D7E17B781C9AEE50008973D7 /* HLLSectionHeaderView.m */,
+				D7E17B791C9AEE50008973D7 /* HLLSectionHeaderView.xib */,
+				D7E17B7A1C9AEE50008973D7 /* HLLSectionInfo.h */,
+				D7E17B7B1C9AEE50008973D7 /* HLLSectionInfo.m */,
+			);
+			path = SectionHeader;
+			sourceTree = "<group>";
+		};
+		D7E17B7E1C9AEE50008973D7 /* TimeZone */ = {
+			isa = PBXGroup;
+			children = (
+				D7E17B7F1C9AEE50008973D7 /* HLLRegion.h */,
+				D7E17B801C9AEE50008973D7 /* HLLRegion.m */,
+				D7E17B811C9AEE50008973D7 /* HLLTimeZone.h */,
+				D7E17B821C9AEE50008973D7 /* HLLTimeZone.m */,
+				D7E17B831C9AEE50008973D7 /* HLLTimeZoneManager.h */,
+				D7E17B841C9AEE50008973D7 /* HLLTimeZoneManager.m */,
+			);
+			path = TimeZone;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,6 +245,7 @@
 			files = (
 				D7E17B541C99A1AF008973D7 /* LaunchScreen.storyboard in Resources */,
 				D7E17B511C99A1AF008973D7 /* Assets.xcassets in Resources */,
+				D7E17B871C9AEE50008973D7 /* HLLSectionHeaderView.xib in Resources */,
 				D7E17B4F1C99A1AF008973D7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,12 +264,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7E17B861C9AEE50008973D7 /* HLLSectionHeaderView.m in Sources */,
+				D7E17B8B1C9AEE50008973D7 /* HLLTimeZone.m in Sources */,
+				D7E17B8C1C9AEE50008973D7 /* HLLTimeZoneManager.m in Sources */,
+				D7E17B8A1C9AEE50008973D7 /* HLLRegion.m in Sources */,
 				D7E17B4C1C99A1AF008973D7 /* ViewController.m in Sources */,
-				D7E17B6E1C99B674008973D7 /* HLLTimeZone.m in Sources */,
 				D7E17B491C99A1AF008973D7 /* AppDelegate.m in Sources */,
-				D7E17B6B1C99B66B008973D7 /* HLLRegion.m in Sources */,
+				D7E17B881C9AEE50008973D7 /* HLLSectionInfo.m in Sources */,
 				D7E17B461C99A1AF008973D7 /* main.m in Sources */,
-				D7E17B711C99B80C008973D7 /* HLLTimeZoneManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
