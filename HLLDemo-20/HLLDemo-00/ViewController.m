@@ -123,7 +123,7 @@ static NSString * const kSectionHeaderViewIdentifier = @"sectionHeaderViewIdenti
     HLLSectionInfo * sectionInfo = self.sectionInfoArray[section];
     sectionInfo.sectionHeaderView = sectionHeaderView;
     sectionHeaderView.titleLabel.text = sectionInfo.region.name;
-
+    sectionHeaderView.countLabel.text = [NSString stringWithFormat:@"%lu",(unsigned long)sectionInfo.region.timeZones.count];
     return sectionHeaderView;
 }
 
@@ -135,6 +135,10 @@ static NSString * const kSectionHeaderViewIdentifier = @"sectionHeaderViewIdenti
     return rowHeight;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
 #pragma mark - HLLSectionHeaderViewDelegate -
 
 - (void)sectionHeaderView:(HLLSectionHeaderView *)sectionHeaderView

@@ -34,16 +34,29 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mvM-Q7-evu">
+                    <rect key="frame" x="517" y="289" width="37.5" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="2" id="Wpv-di-yfu"/>
+                        <constraint firstAttribute="height" constant="21" id="nWy-Be-YB8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="tintColor" red="0.14901960784313725" green="0.42352941176470588" blue="0.45098039215686275" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="XYu-bq-boR" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="2fV-Fm-gLH"/>
                 <constraint firstAttribute="trailing" secondItem="tJf-ZI-Kwl" secondAttribute="trailing" id="Hf8-Xk-4KS"/>
+                <constraint firstAttribute="trailing" secondItem="mvM-Q7-evu" secondAttribute="trailing" constant="45" id="Hja-Nu-VCd"/>
+                <constraint firstItem="mvM-Q7-evu" firstAttribute="centerY" secondItem="tJf-ZI-Kwl" secondAttribute="centerY" id="fy2-io-7pu"/>
                 <constraint firstItem="XYu-bq-boR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="hHe-l5-zTN"/>
                 <constraint firstItem="tJf-ZI-Kwl" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="lDT-wd-Epc"/>
             </constraints>
             <connections>
                 <outlet property="button" destination="tJf-ZI-Kwl" id="ciA-dy-vlh"/>
+                <outlet property="countLabel" destination="mvM-Q7-evu" id="HTV-je-9Cf"/>
                 <outlet property="titleLabel" destination="XYu-bq-boR" id="y9Y-0x-8zG"/>
             </connections>
         </view>

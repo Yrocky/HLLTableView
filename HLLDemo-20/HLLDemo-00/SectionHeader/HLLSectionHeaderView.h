@@ -25,6 +25,7 @@
 // UI
 @property (weak, nonatomic) IBOutlet UIButton *button;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *countLabel;
 
 @property (nonatomic ,weak) id<HLLSectionHeaderViewDelegate>delegate;
 @property (nonatomic ,assign) NSInteger section;
