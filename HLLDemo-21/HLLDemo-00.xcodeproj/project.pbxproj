@@ -20,6 +20,8 @@
 		D7E17B8A1C9AEE50008973D7 /* HLLRegion.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E17B801C9AEE50008973D7 /* HLLRegion.m */; };
 		D7E17B8B1C9AEE50008973D7 /* HLLTimeZone.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E17B821C9AEE50008973D7 /* HLLTimeZone.m */; };
 		D7E17B8C1C9AEE50008973D7 /* HLLTimeZoneManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E17B841C9AEE50008973D7 /* HLLTimeZoneManager.m */; };
+		D7E17BBD1C9DA1C9008973D7 /* HLLTimeZoneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E17BBC1C9DA1C9008973D7 /* HLLTimeZoneCell.m */; };
+		D7E17BC01C9DA2CC008973D7 /* HLLTimeZoneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7E17BBF1C9DA2CC008973D7 /* HLLTimeZoneCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,9 @@
 		D7E17B821C9AEE50008973D7 /* HLLTimeZone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLTimeZone.m; sourceTree = "<group>"; };
 		D7E17B831C9AEE50008973D7 /* HLLTimeZoneManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLTimeZoneManager.h; sourceTree = "<group>"; };
 		D7E17B841C9AEE50008973D7 /* HLLTimeZoneManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLTimeZoneManager.m; sourceTree = "<group>"; };
+		D7E17BBB1C9DA1C9008973D7 /* HLLTimeZoneCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLTimeZoneCell.h; sourceTree = "<group>"; };
+		D7E17BBC1C9DA1C9008973D7 /* HLLTimeZoneCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLTimeZoneCell.m; sourceTree = "<group>"; };
+		D7E17BBF1C9DA2CC008973D7 /* HLLTimeZoneCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLLTimeZoneCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +107,7 @@
 				D7E17B481C99A1AF008973D7 /* AppDelegate.m */,
 				D7E17B4A1C99A1AF008973D7 /* ViewController.h */,
 				D7E17B4B1C99A1AF008973D7 /* ViewController.m */,
+				D7E17BBE1C9DA1D7008973D7 /* View */,
 				D7E17B741C9AEE50008973D7 /* SectionHeader */,
 				D7E17B7E1C9AEE50008973D7 /* TimeZone */,
 				D7E17B731C9AED4B008973D7 /* Source */,
@@ -161,6 +167,16 @@
 				D7E17B841C9AEE50008973D7 /* HLLTimeZoneManager.m */,
 			);
 			path = TimeZone;
+			sourceTree = "<group>";
+		};
+		D7E17BBE1C9DA1D7008973D7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D7E17BBB1C9DA1C9008973D7 /* HLLTimeZoneCell.h */,
+				D7E17BBC1C9DA1C9008973D7 /* HLLTimeZoneCell.m */,
+				D7E17BBF1C9DA2CC008973D7 /* HLLTimeZoneCell.xib */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +262,7 @@
 				D7E17B541C99A1AF008973D7 /* LaunchScreen.storyboard in Resources */,
 				D7E17B511C99A1AF008973D7 /* Assets.xcassets in Resources */,
 				D7E17B871C9AEE50008973D7 /* HLLSectionHeaderView.xib in Resources */,
+				D7E17BC01C9DA2CC008973D7 /* HLLTimeZoneCell.xib in Resources */,
 				D7E17B4F1C99A1AF008973D7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,6 +288,7 @@
 				D7E17B4C1C99A1AF008973D7 /* ViewController.m in Sources */,
 				D7E17B491C99A1AF008973D7 /* AppDelegate.m in Sources */,
 				D7E17B881C9AEE50008973D7 /* HLLSectionInfo.m in Sources */,
+				D7E17BBD1C9DA1C9008973D7 /* HLLTimeZoneCell.m in Sources */,
 				D7E17B461C99A1AF008973D7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,7 +419,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "HLLDemo-00/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "HLL.HLLDemo-20";
+				PRODUCT_BUNDLE_IDENTIFIER = "HLL.HLLDemo-21";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -412,7 +430,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "HLLDemo-00/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "HLL.HLLDemo-20";
+				PRODUCT_BUNDLE_IDENTIFIER = "HLL.HLLDemo-21";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

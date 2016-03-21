@@ -32,6 +32,7 @@
 - (IBAction)toggleOpen:(id)sender {
     
     [self toggleOpenWithUserAction:YES];
+
 }
 
 - (void)toggleOpenWithUserAction:(BOOL)action{

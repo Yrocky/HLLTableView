@@ -10,6 +10,8 @@
 #import "HLLTimeZoneManager.h"
 #import "HLLSectionHeaderView.h"
 #import "HLLSectionInfo.h"
+#import "HLLTimeZoneCell.h"
+
 
 static NSString * const kTimeZoneCellIdentifier = @"timeZoneCellIdentifier";
 static NSString * const kSectionHeaderViewIdentifier = @"sectionHeaderViewIdentifier";
@@ -46,7 +48,8 @@ static NSString * const kSectionHeaderViewIdentifier = @"sectionHeaderViewIdenti
     _tableView.backgroundColor = [UIColor clearColor];
     _tableView.backgroundView = nil;
     _tableView.sectionHeaderHeight = 50.0f;
-    [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kTimeZoneCellIdentifier];
+//    [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kTimeZoneCellIdentifier];
+    [_tableView registerNib:[HLLTimeZoneCell nib] forCellReuseIdentifier:kTimeZoneCellIdentifier];
     [_tableView registerNib:[HLLSectionHeaderView nib] forHeaderFooterViewReuseIdentifier:kSectionHeaderViewIdentifier];
     [self.view addSubview:self.tableView];
 }
@@ -97,13 +100,13 @@ static NSString * const kSectionHeaderViewIdentifier = @"sectionHeaderViewIdenti
 
 - (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
 
-    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:kTimeZoneCellIdentifier forIndexPath:indexPath];
+    HLLTimeZoneCell * cell = [tableView dequeueReusableCellWithIdentifier:kTimeZoneCellIdentifier forIndexPath:indexPath];
     
     HLLSectionInfo * sectionInfo = self.sectionInfoArray[indexPath.section];
     HLLRegion * region = sectionInfo.region;
     HLLTimeZone * timeZone = region.timeZones[indexPath.row];
 
-    cell.textLabel.text = [NSString stringWithFormat:@"%@",timeZone.localeName];
+    [cell configureTimeZoneCellWithTimeZone:timeZone];
     
     return cell;
 }
@@ -143,7 +146,7 @@ static NSString * const kSectionHeaderViewIdentifier = @"sectionHeaderViewIdenti
     HLLSectionInfo * sectionInfo = self.sectionInfoArray[section];
     sectionInfo.open = NO;
     
-    NSInteger countOfRowsToDelete = [self.tableView numberOfRowsInSection:_openSectionIndex];
+    NSInteger countOfRowsToDelete = [self.tableView numberOfRowsInSection:section];
 
     if (countOfRowsToDelete > 0) {
         
