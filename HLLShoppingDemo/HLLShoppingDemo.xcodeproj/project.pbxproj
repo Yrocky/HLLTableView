@@ -1,0 +1,467 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D7E17C001CB17C09008973D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E17BFF1CB17C09008973D7 /* main.m */; };
+		D7E17C031CB17C09008973D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E17C021CB17C09008973D7 /* AppDelegate.m */; };
+		D7E17C061CB17C09008973D7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E17C051CB17C09008973D7 /* ViewController.m */; };
+		D7E17C091CB17C09008973D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7E17C071CB17C09008973D7 /* Main.storyboard */; };
+		D7E17C0B1CB17C09008973D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7E17C0A1CB17C09008973D7 /* Assets.xcassets */; };
+		D7E17C0E1CB17C09008973D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7E17C0C1CB17C09008973D7 /* LaunchScreen.storyboard */; };
+		D7E17C191CB17C09008973D7 /* HLLShoppingDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E17C181CB17C09008973D7 /* HLLShoppingDemoUITests.m */; };
+		D7E17C241CB17D4A008973D7 /* shoppingList.plist in Resources */ = {isa = PBXBuildFile; fileRef = D7E17C231CB17D4A008973D7 /* shoppingList.plist */; };
+		D7E17C291CB1845F008973D7 /* HLLGoodCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E17C271CB1845F008973D7 /* HLLGoodCell.m */; };
+		D7E17C2A1CB1845F008973D7 /* HLLGoodCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7E17C281CB1845F008973D7 /* HLLGoodCell.xib */; };
+		D7E17C2D1CB1849B008973D7 /* HLLBusinessHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E17C2C1CB1849B008973D7 /* HLLBusinessHeaderView.m */; };
+		D7E17C2F1CB184A8008973D7 /* HLLBusinessHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7E17C2E1CB184A8008973D7 /* HLLBusinessHeaderView.xib */; };
+		D7E17C331CB198A2008973D7 /* HLLCheckOutView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E17C321CB198A2008973D7 /* HLLCheckOutView.m */; };
+		D7E17C351CB198AD008973D7 /* HLLCheckOutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7E17C341CB198AD008973D7 /* HLLCheckOutView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D7E17C151CB17C09008973D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7E17BF31CB17C09008973D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7E17BFA1CB17C09008973D7;
+			remoteInfo = HLLShoppingDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D7E17BFB1CB17C09008973D7 /* HLLShoppingDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HLLShoppingDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7E17BFF1CB17C09008973D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D7E17C011CB17C09008973D7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D7E17C021CB17C09008973D7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D7E17C041CB17C09008973D7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D7E17C051CB17C09008973D7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D7E17C081CB17C09008973D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D7E17C0A1CB17C09008973D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D7E17C0D1CB17C09008973D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D7E17C0F1CB17C09008973D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7E17C141CB17C09008973D7 /* HLLShoppingDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HLLShoppingDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7E17C181CB17C09008973D7 /* HLLShoppingDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLLShoppingDemoUITests.m; sourceTree = "<group>"; };
+		D7E17C1A1CB17C09008973D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7E17C231CB17D4A008973D7 /* shoppingList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = shoppingList.plist; sourceTree = "<group>"; };
+		D7E17C261CB1845F008973D7 /* HLLGoodCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLGoodCell.h; sourceTree = "<group>"; };
+		D7E17C271CB1845F008973D7 /* HLLGoodCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLGoodCell.m; sourceTree = "<group>"; };
+		D7E17C281CB1845F008973D7 /* HLLGoodCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLLGoodCell.xib; sourceTree = "<group>"; };
+		D7E17C2B1CB1849B008973D7 /* HLLBusinessHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLBusinessHeaderView.h; sourceTree = "<group>"; };
+		D7E17C2C1CB1849B008973D7 /* HLLBusinessHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLBusinessHeaderView.m; sourceTree = "<group>"; };
+		D7E17C2E1CB184A8008973D7 /* HLLBusinessHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLLBusinessHeaderView.xib; sourceTree = "<group>"; };
+		D7E17C311CB198A2008973D7 /* HLLCheckOutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLCheckOutView.h; sourceTree = "<group>"; };
+		D7E17C321CB198A2008973D7 /* HLLCheckOutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLCheckOutView.m; sourceTree = "<group>"; };
+		D7E17C341CB198AD008973D7 /* HLLCheckOutView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLLCheckOutView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D7E17BF81CB17C09008973D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7E17C111CB17C09008973D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D7E17BF21CB17C09008973D7 = {
+			isa = PBXGroup;
+			children = (
+				D7E17BFD1CB17C09008973D7 /* HLLShoppingDemo */,
+				D7E17C171CB17C09008973D7 /* HLLShoppingDemoUITests */,
+				D7E17BFC1CB17C09008973D7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D7E17BFC1CB17C09008973D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7E17BFB1CB17C09008973D7 /* HLLShoppingDemo.app */,
+				D7E17C141CB17C09008973D7 /* HLLShoppingDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D7E17BFD1CB17C09008973D7 /* HLLShoppingDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D7E17C011CB17C09008973D7 /* AppDelegate.h */,
+				D7E17C021CB17C09008973D7 /* AppDelegate.m */,
+				D7E17C041CB17C09008973D7 /* ViewController.h */,
+				D7E17C051CB17C09008973D7 /* ViewController.m */,
+				D7E17C301CB184AD008973D7 /* View */,
+				D7E17C251CB1843F008973D7 /* Other */,
+				D7E17BFE1CB17C09008973D7 /* Supporting Files */,
+			);
+			path = HLLShoppingDemo;
+			sourceTree = "<group>";
+		};
+		D7E17BFE1CB17C09008973D7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D7E17BFF1CB17C09008973D7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D7E17C171CB17C09008973D7 /* HLLShoppingDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D7E17C181CB17C09008973D7 /* HLLShoppingDemoUITests.m */,
+				D7E17C1A1CB17C09008973D7 /* Info.plist */,
+			);
+			path = HLLShoppingDemoUITests;
+			sourceTree = "<group>";
+		};
+		D7E17C251CB1843F008973D7 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				D7E17C231CB17D4A008973D7 /* shoppingList.plist */,
+				D7E17C071CB17C09008973D7 /* Main.storyboard */,
+				D7E17C0A1CB17C09008973D7 /* Assets.xcassets */,
+				D7E17C0C1CB17C09008973D7 /* LaunchScreen.storyboard */,
+				D7E17C0F1CB17C09008973D7 /* Info.plist */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		D7E17C301CB184AD008973D7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D7E17C2B1CB1849B008973D7 /* HLLBusinessHeaderView.h */,
+				D7E17C2C1CB1849B008973D7 /* HLLBusinessHeaderView.m */,
+				D7E17C2E1CB184A8008973D7 /* HLLBusinessHeaderView.xib */,
+				D7E17C261CB1845F008973D7 /* HLLGoodCell.h */,
+				D7E17C271CB1845F008973D7 /* HLLGoodCell.m */,
+				D7E17C281CB1845F008973D7 /* HLLGoodCell.xib */,
+				D7E17C311CB198A2008973D7 /* HLLCheckOutView.h */,
+				D7E17C321CB198A2008973D7 /* HLLCheckOutView.m */,
+				D7E17C341CB198AD008973D7 /* HLLCheckOutView.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D7E17BFA1CB17C09008973D7 /* HLLShoppingDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7E17C1D1CB17C09008973D7 /* Build configuration list for PBXNativeTarget "HLLShoppingDemo" */;
+			buildPhases = (
+				D7E17BF71CB17C09008973D7 /* Sources */,
+				D7E17BF81CB17C09008973D7 /* Frameworks */,
+				D7E17BF91CB17C09008973D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HLLShoppingDemo;
+			productName = HLLShoppingDemo;
+			productReference = D7E17BFB1CB17C09008973D7 /* HLLShoppingDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D7E17C131CB17C09008973D7 /* HLLShoppingDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7E17C201CB17C09008973D7 /* Build configuration list for PBXNativeTarget "HLLShoppingDemoUITests" */;
+			buildPhases = (
+				D7E17C101CB17C09008973D7 /* Sources */,
+				D7E17C111CB17C09008973D7 /* Frameworks */,
+				D7E17C121CB17C09008973D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D7E17C161CB17C09008973D7 /* PBXTargetDependency */,
+			);
+			name = HLLShoppingDemoUITests;
+			productName = HLLShoppingDemoUITests;
+			productReference = D7E17C141CB17C09008973D7 /* HLLShoppingDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D7E17BF31CB17C09008973D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = HLL;
+				TargetAttributes = {
+					D7E17BFA1CB17C09008973D7 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					D7E17C131CB17C09008973D7 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = D7E17BFA1CB17C09008973D7;
+					};
+				};
+			};
+			buildConfigurationList = D7E17BF61CB17C09008973D7 /* Build configuration list for PBXProject "HLLShoppingDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D7E17BF21CB17C09008973D7;
+			productRefGroup = D7E17BFC1CB17C09008973D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D7E17BFA1CB17C09008973D7 /* HLLShoppingDemo */,
+				D7E17C131CB17C09008973D7 /* HLLShoppingDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D7E17BF91CB17C09008973D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7E17C241CB17D4A008973D7 /* shoppingList.plist in Resources */,
+				D7E17C351CB198AD008973D7 /* HLLCheckOutView.xib in Resources */,
+				D7E17C0E1CB17C09008973D7 /* LaunchScreen.storyboard in Resources */,
+				D7E17C0B1CB17C09008973D7 /* Assets.xcassets in Resources */,
+				D7E17C091CB17C09008973D7 /* Main.storyboard in Resources */,
+				D7E17C2F1CB184A8008973D7 /* HLLBusinessHeaderView.xib in Resources */,
+				D7E17C2A1CB1845F008973D7 /* HLLGoodCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7E17C121CB17C09008973D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D7E17BF71CB17C09008973D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7E17C2D1CB1849B008973D7 /* HLLBusinessHeaderView.m in Sources */,
+				D7E17C061CB17C09008973D7 /* ViewController.m in Sources */,
+				D7E17C291CB1845F008973D7 /* HLLGoodCell.m in Sources */,
+				D7E17C031CB17C09008973D7 /* AppDelegate.m in Sources */,
+				D7E17C001CB17C09008973D7 /* main.m in Sources */,
+				D7E17C331CB198A2008973D7 /* HLLCheckOutView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7E17C101CB17C09008973D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7E17C191CB17C09008973D7 /* HLLShoppingDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D7E17C161CB17C09008973D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7E17BFA1CB17C09008973D7 /* HLLShoppingDemo */;
+			targetProxy = D7E17C151CB17C09008973D7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D7E17C071CB17C09008973D7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7E17C081CB17C09008973D7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D7E17C0C1CB17C09008973D7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7E17C0D1CB17C09008973D7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D7E17C1B1CB17C09008973D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D7E17C1C1CB17C09008973D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D7E17C1E1CB17C09008973D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HLLShoppingDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HLL.HLLShoppingDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D7E17C1F1CB17C09008973D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HLLShoppingDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HLL.HLLShoppingDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D7E17C211CB17C09008973D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HLLShoppingDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HLL.HLLShoppingDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HLLShoppingDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		D7E17C221CB17C09008973D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HLLShoppingDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HLL.HLLShoppingDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HLLShoppingDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D7E17BF61CB17C09008973D7 /* Build configuration list for PBXProject "HLLShoppingDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7E17C1B1CB17C09008973D7 /* Debug */,
+				D7E17C1C1CB17C09008973D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7E17C1D1CB17C09008973D7 /* Build configuration list for PBXNativeTarget "HLLShoppingDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7E17C1E1CB17C09008973D7 /* Debug */,
+				D7E17C1F1CB17C09008973D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D7E17C201CB17C09008973D7 /* Build configuration list for PBXNativeTarget "HLLShoppingDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7E17C211CB17C09008973D7 /* Debug */,
+				D7E17C221CB17C09008973D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D7E17BF31CB17C09008973D7 /* Project object */;
+}
