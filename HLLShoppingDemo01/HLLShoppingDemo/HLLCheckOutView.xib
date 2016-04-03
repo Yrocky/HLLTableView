@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HLLCheckOutView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j6d-ef-w51">
+                    <rect key="frame" x="20" y="288" width="23" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="23" id="ASH-lf-9lL"/>
+                        <constraint firstAttribute="height" constant="23" id="bAN-qt-ePB"/>
+                    </constraints>
+                    <state key="normal" image="CheckBox"/>
+                    <connections>
+                        <action selector="allGoodsDIdSelected:" destination="iN0-l3-epB" eventType="touchUpInside" id="9Bu-Zh-Sx8"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="全选" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="64C-rw-eHe">
+                    <rect key="frame" x="43" y="291" width="26" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AN3-9m-7SH">
+                    <rect key="frame" x="500" y="274" width="100" height="50"/>
+                    <color key="backgroundColor" red="1" green="0.47235377379999999" blue="0.31133888589999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="BaP-lf-z8Z"/>
+                        <constraint firstAttribute="height" constant="50" id="LMn-a3-X01"/>
+                    </constraints>
+                    <state key="normal" title="结算">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="合计：￥0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SsK-0b-uSK">
+                    <rect key="frame" x="359.5" y="288" width="91" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="176-Mz-zuz"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="2" id="GvY-sC-0yF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="AN3-9m-7SH" firstAttribute="leading" secondItem="SsK-0b-uSK" secondAttribute="trailing" constant="50" id="CFf-JX-qnu"/>
+                <constraint firstItem="64C-rw-eHe" firstAttribute="leading" secondItem="j6d-ef-w51" secondAttribute="trailing" id="GAB-Ao-fYL"/>
+                <constraint firstItem="j6d-ef-w51" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="OTt-fm-ZIm"/>
+                <constraint firstItem="j6d-ef-w51" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="Vlb-Mk-Vc1"/>
+                <constraint firstItem="AN3-9m-7SH" firstAttribute="centerY" secondItem="64C-rw-eHe" secondAttribute="centerY" id="WTc-bS-Jas"/>
+                <constraint firstItem="SsK-0b-uSK" firstAttribute="centerY" secondItem="AN3-9m-7SH" secondAttribute="centerY" id="c7T-u9-M96"/>
+                <constraint firstAttribute="trailing" secondItem="AN3-9m-7SH" secondAttribute="trailing" id="lq7-Ue-A9G"/>
+                <constraint firstItem="64C-rw-eHe" firstAttribute="centerY" secondItem="j6d-ef-w51" secondAttribute="centerY" id="rPA-Py-u5E"/>
+            </constraints>
+            <connections>
+                <outlet property="allPriceLabel" destination="SsK-0b-uSK" id="Lcu-rD-gHW"/>
+                <outlet property="allSelectedButton" destination="j6d-ef-w51" id="MVs-Dd-sEP"/>
+                <outlet property="checkoutButton" destination="AN3-9m-7SH" id="Toe-90-r3R"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="CheckBox" width="16" height="16"/>
+    </resources>
+</document>
