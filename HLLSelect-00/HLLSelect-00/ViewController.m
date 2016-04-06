@@ -7,14 +7,17 @@
 //
 
 #import "ViewController.h"
+#import "HLLSelectCell.h"
+
+#define CustomCell
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-
+@property (nonatomic ,strong) NSIndexPath * selectedIndexPath;
 @property (nonatomic ,strong) NSMutableArray * datas;
 @end
 
-static NSString * kCellIdentifier = @"item";
+static NSString * kCellIdentifier = @"selectCell";
 
 @implementation ViewController
 
@@ -27,13 +30,20 @@ static NSString * kCellIdentifier = @"item";
         _datas = [NSMutableArray array];
     }
     
-    for (NSInteger index = 0; index < 20; index ++) {
+    for (NSInteger index = 0; index < 30; index ++) {
         @autoreleasepool {
             
             NSString * item = [NSString stringWithFormat:@"%ld",(long)index];
             [_datas addObject:item];
         }
     }
+    
+#ifdef CustomCell
+    
+    [self.tableView registerNib:[UINib nibWithNibName:@"HLLSelectCell" bundle:nil] forCellReuseIdentifier:@"selectCell"];
+#else
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kCellIdentifier];
+#endif
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -65,28 +75,64 @@ static NSString * kCellIdentifier = @"item";
 }
 - (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
 
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellIdentifier forIndexPath:indexPath];
-//    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"selectCell" forIndexPath:indexPath];
+
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    
+#ifndef CustomCell
+    
+    if (_selectedIndexPath && _selectedIndexPath == indexPath) {
+        
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    }else{
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    }
+#endif
     return cell;
 }
 
 - (void) tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
 
+#ifdef CustomCell
+    
+    HLLSelectCell * selectCell = (HLLSelectCell *)cell;
+    selectCell.centerTitleLabel.text = [NSString stringWithFormat:@"This is No.%@",self.datas[indexPath.row]];
+#else
     cell.textLabel.text = [NSString stringWithFormat:@"This is No.%@",self.datas[indexPath.row]];
+#endif
 }
 
 #pragma mark - UITableViewDelegate
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
+#ifndef CustomCell
+    
+    _selectedIndexPath = indexPath;
+    [tableView reloadData];
+    return;
+    
     UITableViewCell * cell = [tableView cellForRowAtIndexPath:indexPath];
-    NSLog(@"%d",cell.selectionStyle);
-//
-//    if (cell.selected) {
-//        cell.accessoryType = UITableViewCellAccessoryNone;
-//    }else{
-//        cell.accessoryType = UITableViewCellAccessoryCheckmark;
-//    }
-//    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+
+    if (_selectedIndexPath) {
+        
+        // 取消上一次选择的accessoryType
+        cell = [tableView cellForRowAtIndexPath:self.selectedIndexPath];
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    }
+    
+    // 设置这一次选择的accessoryType
+    cell = [tableView cellForRowAtIndexPath:indexPath];
+    if (cell.accessoryType) {
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    } else {
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    }
+    
+    // 保存indexPath
+    self.selectedIndexPath = indexPath;
+    
+    [tableView performSelector:@selector(deselectRowAtIndexPath:animated:) withObject:indexPath afterDelay:0.5];
+#endif
 }
 
 @end

@@ -14,6 +14,8 @@
 		D7E17BDA1CB16C75008973D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7E17BD91CB16C75008973D7 /* Assets.xcassets */; };
 		D7E17BDD1CB16C75008973D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7E17BDB1CB16C75008973D7 /* LaunchScreen.storyboard */; };
 		D7E17BE81CB16C75008973D7 /* HLLSelect_00UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E17BE71CB16C75008973D7 /* HLLSelect_00UITests.m */; };
+		D7E17C391CB1BB9C008973D7 /* HLLSelectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E17C371CB1BB9C008973D7 /* HLLSelectCell.m */; };
+		D7E17C3A1CB1BB9C008973D7 /* HLLSelectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7E17C381CB1BB9C008973D7 /* HLLSelectCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		D7E17BE31CB16C75008973D7 /* HLLSelect-00UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HLLSelect-00UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7E17BE71CB16C75008973D7 /* HLLSelect_00UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLLSelect_00UITests.m; sourceTree = "<group>"; };
 		D7E17BE91CB16C75008973D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7E17C361CB1BB9C008973D7 /* HLLSelectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLSelectCell.h; sourceTree = "<group>"; };
+		D7E17C371CB1BB9C008973D7 /* HLLSelectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLSelectCell.m; sourceTree = "<group>"; };
+		D7E17C381CB1BB9C008973D7 /* HLLSelectCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLLSelectCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +90,9 @@
 				D7E17BD11CB16C75008973D7 /* AppDelegate.m */,
 				D7E17BD31CB16C75008973D7 /* ViewController.h */,
 				D7E17BD41CB16C75008973D7 /* ViewController.m */,
+				D7E17C361CB1BB9C008973D7 /* HLLSelectCell.h */,
+				D7E17C371CB1BB9C008973D7 /* HLLSelectCell.m */,
+				D7E17C381CB1BB9C008973D7 /* HLLSelectCell.xib */,
 				D7E17BD61CB16C75008973D7 /* Main.storyboard */,
 				D7E17BD91CB16C75008973D7 /* Assets.xcassets */,
 				D7E17BDB1CB16C75008973D7 /* LaunchScreen.storyboard */,
@@ -193,6 +201,7 @@
 			files = (
 				D7E17BDD1CB16C75008973D7 /* LaunchScreen.storyboard in Resources */,
 				D7E17BDA1CB16C75008973D7 /* Assets.xcassets in Resources */,
+				D7E17C3A1CB1BB9C008973D7 /* HLLSelectCell.xib in Resources */,
 				D7E17BD81CB16C75008973D7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,6 +222,7 @@
 			files = (
 				D7E17BD51CB16C75008973D7 /* ViewController.m in Sources */,
 				D7E17BD21CB16C75008973D7 /* AppDelegate.m in Sources */,
+				D7E17C391CB1BB9C008973D7 /* HLLSelectCell.m in Sources */,
 				D7E17BCF1CB16C75008973D7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,6 +412,7 @@
 				D7E17BEE1CB16C75008973D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D7E17BEF1CB16C75008973D7 /* Build configuration list for PBXNativeTarget "HLLSelect-00UITests" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +421,7 @@
 				D7E17BF11CB16C75008973D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
