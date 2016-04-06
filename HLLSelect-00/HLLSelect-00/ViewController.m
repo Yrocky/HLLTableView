@@ -46,27 +46,6 @@ static NSString * kCellIdentifier = @"selectCell";
 #endif
 }
 
-- (void)viewWillAppear:(BOOL)animated{
-
-    [super viewWillAppear:animated];
-    
-}
-
-#pragma mark - Private
-- (UIView *) _tableViewDidSelectedRow:(NSIndexPath *)selectedIndexPath{
-
-    UIView * selectedView = [UIView new];
-    selectedView.backgroundColor = [UIColor orangeColor];
-    
-    UILabel * textLabel = [UILabel new];
-    textLabel.frame = CGRectMake(100, 0, 100, 44);
-    textLabel.text = [NSString stringWithFormat:@"%ld",(long)selectedIndexPath.row];
-    textLabel.textColor = [UIColor whiteColor];
-    textLabel.textAlignment = NSTextAlignmentRight;
-    [selectedView addSubview:textLabel];
-    
-    return selectedView;
-}
 #pragma mark - UITableViewDatasource
 
 - (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
