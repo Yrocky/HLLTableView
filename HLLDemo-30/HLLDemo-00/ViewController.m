@@ -19,7 +19,7 @@ static NSString * const kTimeZoneCellIdentifier = @"timeZoneCellIdentifier";
 
 @property (nonatomic ,strong) UISearchController * searchController;
 
-@property (nonatomic ,strong) NSMutableArray * filterArray;
+@property (nonatomic ,strong) NSArray * visibleResults;
 
 @end
 
@@ -43,7 +43,7 @@ static NSString * const kTimeZoneCellIdentifier = @"timeZoneCellIdentifier";
     
     [self configureSearchController];
     
-    _filterArray = [NSMutableArray array];
+    _visibleResults = [self.manager allTimeZones];
     
 }
 
@@ -64,24 +64,15 @@ static NSString * const kTimeZoneCellIdentifier = @"timeZoneCellIdentifier";
 
 - (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
 
-    if (self.searchController.active) {
-        return self.filterArray.count;
-    }else{
-        return [[self.manager allTimeZones] count];
-    }
+    return self.visibleResults.count;
 }
 
 - (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
 
     UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:kTimeZoneCellIdentifier forIndexPath:indexPath];
     
-    HLLTimeZone * timeZone;
+    HLLTimeZone * timeZone = self.visibleResults[indexPath.row];
     
-    if (self.searchController.active) {
-        timeZone = self.filterArray[indexPath.row];
-    }else{
-        timeZone = [self.manager allTimeZones][indexPath.row];
-    }
     cell.textLabel.text = [NSString stringWithFormat:@"%@",timeZone.localeName];
     
     return cell;
@@ -95,19 +86,17 @@ static NSString * const kTimeZoneCellIdentifier = @"timeZoneCellIdentifier";
 
 - (void)updateSearchResultsForSearchController:(UISearchController *)searchController{
 
-
-    if (searchController.searchBar.text) {
-        
-        NSPredicate * predicate = [NSPredicate predicateWithFormat:@"self.localeName contains %@",searchController.searchBar.text];
-        
-        [_filterArray removeAllObjects];
-        
-        NSArray * allTimeZones = [[self.manager allTimeZones] copy];
-        
-        [_filterArray addObjectsFromArray:[allTimeZones filteredArrayUsingPredicate:predicate]];
-        
-        [self.tableView reloadData];
+    NSString * filterString = self.searchController.searchBar.text;
+    
+    if (!filterString || filterString.length <= 0) {
+        self.visibleResults = [self.manager allTimeZones];
     }
+    else {
+        NSPredicate *filterPredicate = [NSPredicate predicateWithFormat:@"self.localeName contains %@", filterString];
+        
+        self.visibleResults = [[self.manager allTimeZones] filteredArrayUsingPredicate:filterPredicate];
+    }
+    [self.tableView reloadData];
 }
 
 @end
