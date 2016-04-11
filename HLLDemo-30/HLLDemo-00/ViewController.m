@@ -44,7 +44,6 @@ static NSString * const kTimeZoneCellIdentifier = @"timeZoneCellIdentifier";
     [self configureSearchController];
     
     _visibleResults = [self.manager allTimeZones];
-    
 }
 
 
@@ -77,7 +76,6 @@ static NSString * const kTimeZoneCellIdentifier = @"timeZoneCellIdentifier";
     
     return cell;
 }
-
 
 #pragma mark - UISearchBarDelegate -
 
