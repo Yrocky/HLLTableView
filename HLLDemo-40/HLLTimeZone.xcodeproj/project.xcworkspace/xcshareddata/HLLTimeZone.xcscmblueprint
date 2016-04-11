@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "382BE4BA10366F6C5EBC2106B761C64BB0C8F888",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "92504C176D5426FCAC6AA775FA8B1F42BE50F234" : 0,
+    "382BE4BA10366F6C5EBC2106B761C64BB0C8F888" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "3288BB64-465F-432C-A80E-FA56D8079285",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "92504C176D5426FCAC6AA775FA8B1F42BE50F234" : "",
+    "382BE4BA10366F6C5EBC2106B761C64BB0C8F888" : "HLLTimeZone\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "HLLTimeZone",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "HLLTimeZone.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Yrocky\/HLLTimeZone.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "382BE4BA10366F6C5EBC2106B761C64BB0C8F888"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Yrocky\/HLLTableView.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "92504C176D5426FCAC6AA775FA8B1F42BE50F234"
+    }
+  ]
+}

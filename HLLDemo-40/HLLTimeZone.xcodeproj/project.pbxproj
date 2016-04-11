@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		840335F11C7EF3760036AEE7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 840335F01C7EF3760036AEE7 /* main.m */; };
+		840335F41C7EF3760036AEE7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 840335F31C7EF3760036AEE7 /* AppDelegate.m */; };
+		840335F71C7EF3760036AEE7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 840335F61C7EF3760036AEE7 /* ViewController.m */; };
+		840335FA1C7EF3760036AEE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840335F81C7EF3760036AEE7 /* Main.storyboard */; };
+		840335FC1C7EF3760036AEE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840335FB1C7EF3760036AEE7 /* Assets.xcassets */; };
+		840335FF1C7EF3760036AEE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840335FD1C7EF3760036AEE7 /* LaunchScreen.storyboard */; };
+		8403360A1C7EF3760036AEE7 /* HLLTimeZoneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 840336091C7EF3760036AEE7 /* HLLTimeZoneTests.m */; };
+		840336151C7EF3760036AEE7 /* HLLTimeZoneUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 840336141C7EF3760036AEE7 /* HLLTimeZoneUITests.m */; };
+		840336391C8042E60036AEE7 /* HLLRegion.m in Sources */ = {isa = PBXBuildFile; fileRef = 840336341C8042E60036AEE7 /* HLLRegion.m */; };
+		8403363B1C8042E60036AEE7 /* HLLTimeZoneWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 840336381C8042E60036AEE7 /* HLLTimeZoneWrapper.m */; };
+		840336401C8042ED0036AEE7 /* HLLSortObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8403363E1C8042ED0036AEE7 /* HLLSortObject.m */; };
+		840336431C804C530036AEE7 /* NSArray+Sort.m in Sources */ = {isa = PBXBuildFile; fileRef = 840336421C804C530036AEE7 /* NSArray+Sort.m */; };
+		8403364E1C805A440036AEE7 /* HLLSortA_ZDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8403364A1C805A440036AEE7 /* HLLSortA_ZDataSource.m */; };
+		8403364F1C805A440036AEE7 /* HLLSortRegionsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8403364D1C805A440036AEE7 /* HLLSortRegionsDataSource.m */; };
+		840336501C805AC70036AEE7 /* HLLTimeZoneManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 840336351C8042E60036AEE7 /* HLLTimeZoneManager.h */; };
+		840336511C805AC70036AEE7 /* HLLTimeZoneManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 840336361C8042E60036AEE7 /* HLLTimeZoneManager.m */; };
+		840336541C83D6780036AEE7 /* HLLSortLocalizedIndexedCollationDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 840336531C83D6780036AEE7 /* HLLSortLocalizedIndexedCollationDataSource.m */; };
+		D7D4F40C1CBC2A7400E3C937 /* HLLNormalDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D4F40B1CBC2A7400E3C937 /* HLLNormalDataSource.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		840336061C7EF3760036AEE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 840335E41C7EF3760036AEE7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 840335EB1C7EF3760036AEE7;
+			remoteInfo = HLLTimeZone;
+		};
+		840336111C7EF3760036AEE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 840335E41C7EF3760036AEE7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 840335EB1C7EF3760036AEE7;
+			remoteInfo = HLLTimeZone;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		840335EC1C7EF3760036AEE7 /* HLLTimeZone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HLLTimeZone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		840335F01C7EF3760036AEE7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		840335F21C7EF3760036AEE7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		840335F31C7EF3760036AEE7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		840335F51C7EF3760036AEE7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		840335F61C7EF3760036AEE7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		840335F91C7EF3760036AEE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		840335FB1C7EF3760036AEE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		840335FE1C7EF3760036AEE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		840336001C7EF3760036AEE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		840336051C7EF3760036AEE7 /* HLLTimeZoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HLLTimeZoneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		840336091C7EF3760036AEE7 /* HLLTimeZoneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLLTimeZoneTests.m; sourceTree = "<group>"; };
+		8403360B1C7EF3760036AEE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		840336101C7EF3760036AEE7 /* HLLTimeZoneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HLLTimeZoneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		840336141C7EF3760036AEE7 /* HLLTimeZoneUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLLTimeZoneUITests.m; sourceTree = "<group>"; };
+		840336161C7EF3760036AEE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		840336331C8042E60036AEE7 /* HLLRegion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLRegion.h; sourceTree = "<group>"; };
+		840336341C8042E60036AEE7 /* HLLRegion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLRegion.m; sourceTree = "<group>"; };
+		840336351C8042E60036AEE7 /* HLLTimeZoneManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLTimeZoneManager.h; sourceTree = "<group>"; };
+		840336361C8042E60036AEE7 /* HLLTimeZoneManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLTimeZoneManager.m; sourceTree = "<group>"; };
+		840336371C8042E60036AEE7 /* HLLTimeZoneWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLTimeZoneWrapper.h; sourceTree = "<group>"; };
+		840336381C8042E60036AEE7 /* HLLTimeZoneWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLTimeZoneWrapper.m; sourceTree = "<group>"; };
+		8403363D1C8042ED0036AEE7 /* HLLSortObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLSortObject.h; sourceTree = "<group>"; };
+		8403363E1C8042ED0036AEE7 /* HLLSortObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLSortObject.m; sourceTree = "<group>"; };
+		8403363F1C8042ED0036AEE7 /* Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tool.h; sourceTree = "<group>"; };
+		840336411C804C530036AEE7 /* NSArray+Sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Sort.h"; sourceTree = "<group>"; };
+		840336421C804C530036AEE7 /* NSArray+Sort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Sort.m"; sourceTree = "<group>"; };
+		840336491C805A440036AEE7 /* HLLSortA_ZDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLSortA_ZDataSource.h; sourceTree = "<group>"; };
+		8403364A1C805A440036AEE7 /* HLLSortA_ZDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLSortA_ZDataSource.m; sourceTree = "<group>"; };
+		8403364B1C805A440036AEE7 /* HLLSortProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLSortProtocol.h; sourceTree = "<group>"; };
+		8403364C1C805A440036AEE7 /* HLLSortRegionsDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLSortRegionsDataSource.h; sourceTree = "<group>"; };
+		8403364D1C805A440036AEE7 /* HLLSortRegionsDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLSortRegionsDataSource.m; sourceTree = "<group>"; };
+		840336521C83D6780036AEE7 /* HLLSortLocalizedIndexedCollationDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLSortLocalizedIndexedCollationDataSource.h; sourceTree = "<group>"; };
+		840336531C83D6780036AEE7 /* HLLSortLocalizedIndexedCollationDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLSortLocalizedIndexedCollationDataSource.m; sourceTree = "<group>"; };
+		D7D4F40A1CBC2A7400E3C937 /* HLLNormalDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLNormalDataSource.h; sourceTree = "<group>"; };
+		D7D4F40B1CBC2A7400E3C937 /* HLLNormalDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLNormalDataSource.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		840335E91C7EF3760036AEE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		840336021C7EF3760036AEE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8403360D1C7EF3760036AEE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		840335E31C7EF3760036AEE7 = {
+			isa = PBXGroup;
+			children = (
+				840335EE1C7EF3760036AEE7 /* HLLTimeZone */,
+				840336081C7EF3760036AEE7 /* HLLTimeZoneTests */,
+				840336131C7EF3760036AEE7 /* HLLTimeZoneUITests */,
+				840335ED1C7EF3760036AEE7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		840335ED1C7EF3760036AEE7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				840335EC1C7EF3760036AEE7 /* HLLTimeZone.app */,
+				840336051C7EF3760036AEE7 /* HLLTimeZoneTests.xctest */,
+				840336101C7EF3760036AEE7 /* HLLTimeZoneUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		840335EE1C7EF3760036AEE7 /* HLLTimeZone */ = {
+			isa = PBXGroup;
+			children = (
+				840335F21C7EF3760036AEE7 /* AppDelegate.h */,
+				840335F31C7EF3760036AEE7 /* AppDelegate.m */,
+				840335F51C7EF3760036AEE7 /* ViewController.h */,
+				840335F61C7EF3760036AEE7 /* ViewController.m */,
+				840336481C805A440036AEE7 /* DataSource */,
+				8403363C1C8042ED0036AEE7 /* Sort */,
+				840336321C8042E60036AEE7 /* TimeZone */,
+				840335F81C7EF3760036AEE7 /* Main.storyboard */,
+				840335FB1C7EF3760036AEE7 /* Assets.xcassets */,
+				840335FD1C7EF3760036AEE7 /* LaunchScreen.storyboard */,
+				840336001C7EF3760036AEE7 /* Info.plist */,
+				840335EF1C7EF3760036AEE7 /* Supporting Files */,
+			);
+			path = HLLTimeZone;
+			sourceTree = "<group>";
+		};
+		840335EF1C7EF3760036AEE7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				840335F01C7EF3760036AEE7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		840336081C7EF3760036AEE7 /* HLLTimeZoneTests */ = {
+			isa = PBXGroup;
+			children = (
+				840336091C7EF3760036AEE7 /* HLLTimeZoneTests.m */,
+				8403360B1C7EF3760036AEE7 /* Info.plist */,
+			);
+			path = HLLTimeZoneTests;
+			sourceTree = "<group>";
+		};
+		840336131C7EF3760036AEE7 /* HLLTimeZoneUITests */ = {
+			isa = PBXGroup;
+			children = (
+				840336141C7EF3760036AEE7 /* HLLTimeZoneUITests.m */,
+				840336161C7EF3760036AEE7 /* Info.plist */,
+			);
+			path = HLLTimeZoneUITests;
+			sourceTree = "<group>";
+		};
+		840336321C8042E60036AEE7 /* TimeZone */ = {
+			isa = PBXGroup;
+			children = (
+				840336351C8042E60036AEE7 /* HLLTimeZoneManager.h */,
+				840336361C8042E60036AEE7 /* HLLTimeZoneManager.m */,
+				840336331C8042E60036AEE7 /* HLLRegion.h */,
+				840336341C8042E60036AEE7 /* HLLRegion.m */,
+				840336371C8042E60036AEE7 /* HLLTimeZoneWrapper.h */,
+				840336381C8042E60036AEE7 /* HLLTimeZoneWrapper.m */,
+			);
+			path = TimeZone;
+			sourceTree = "<group>";
+		};
+		8403363C1C8042ED0036AEE7 /* Sort */ = {
+			isa = PBXGroup;
+			children = (
+				8403363D1C8042ED0036AEE7 /* HLLSortObject.h */,
+				8403363E1C8042ED0036AEE7 /* HLLSortObject.m */,
+				840336411C804C530036AEE7 /* NSArray+Sort.h */,
+				840336421C804C530036AEE7 /* NSArray+Sort.m */,
+				8403363F1C8042ED0036AEE7 /* Tool.h */,
+			);
+			path = Sort;
+			sourceTree = "<group>";
+		};
+		840336481C805A440036AEE7 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				8403364B1C805A440036AEE7 /* HLLSortProtocol.h */,
+				D7D4F40A1CBC2A7400E3C937 /* HLLNormalDataSource.h */,
+				D7D4F40B1CBC2A7400E3C937 /* HLLNormalDataSource.m */,
+				840336491C805A440036AEE7 /* HLLSortA_ZDataSource.h */,
+				8403364A1C805A440036AEE7 /* HLLSortA_ZDataSource.m */,
+				8403364C1C805A440036AEE7 /* HLLSortRegionsDataSource.h */,
+				8403364D1C805A440036AEE7 /* HLLSortRegionsDataSource.m */,
+				840336521C83D6780036AEE7 /* HLLSortLocalizedIndexedCollationDataSource.h */,
+				840336531C83D6780036AEE7 /* HLLSortLocalizedIndexedCollationDataSource.m */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		840335EB1C7EF3760036AEE7 /* HLLTimeZone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 840336191C7EF3760036AEE7 /* Build configuration list for PBXNativeTarget "HLLTimeZone" */;
+			buildPhases = (
+				840335E81C7EF3760036AEE7 /* Sources */,
+				840335E91C7EF3760036AEE7 /* Frameworks */,
+				840335EA1C7EF3760036AEE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HLLTimeZone;
+			productName = HLLTimeZone;
+			productReference = 840335EC1C7EF3760036AEE7 /* HLLTimeZone.app */;
+			productType = "com.apple.product-type.application";
+		};
+		840336041C7EF3760036AEE7 /* HLLTimeZoneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8403361C1C7EF3760036AEE7 /* Build configuration list for PBXNativeTarget "HLLTimeZoneTests" */;
+			buildPhases = (
+				840336011C7EF3760036AEE7 /* Sources */,
+				840336021C7EF3760036AEE7 /* Frameworks */,
+				840336031C7EF3760036AEE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				840336071C7EF3760036AEE7 /* PBXTargetDependency */,
+			);
+			name = HLLTimeZoneTests;
+			productName = HLLTimeZoneTests;
+			productReference = 840336051C7EF3760036AEE7 /* HLLTimeZoneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8403360F1C7EF3760036AEE7 /* HLLTimeZoneUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8403361F1C7EF3760036AEE7 /* Build configuration list for PBXNativeTarget "HLLTimeZoneUITests" */;
+			buildPhases = (
+				8403360C1C7EF3760036AEE7 /* Sources */,
+				8403360D1C7EF3760036AEE7 /* Frameworks */,
+				8403360E1C7EF3760036AEE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				840336121C7EF3760036AEE7 /* PBXTargetDependency */,
+			);
+			name = HLLTimeZoneUITests;
+			productName = HLLTimeZoneUITests;
+			productReference = 840336101C7EF3760036AEE7 /* HLLTimeZoneUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		840335E41C7EF3760036AEE7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = HLL;
+				TargetAttributes = {
+					840335EB1C7EF3760036AEE7 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					840336041C7EF3760036AEE7 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 840335EB1C7EF3760036AEE7;
+					};
+					8403360F1C7EF3760036AEE7 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 840335EB1C7EF3760036AEE7;
+					};
+				};
+			};
+			buildConfigurationList = 840335E71C7EF3760036AEE7 /* Build configuration list for PBXProject "HLLTimeZone" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 840335E31C7EF3760036AEE7;
+			productRefGroup = 840335ED1C7EF3760036AEE7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				840335EB1C7EF3760036AEE7 /* HLLTimeZone */,
+				840336041C7EF3760036AEE7 /* HLLTimeZoneTests */,
+				8403360F1C7EF3760036AEE7 /* HLLTimeZoneUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		840335EA1C7EF3760036AEE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840335FF1C7EF3760036AEE7 /* LaunchScreen.storyboard in Resources */,
+				840335FC1C7EF3760036AEE7 /* Assets.xcassets in Resources */,
+				840335FA1C7EF3760036AEE7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		840336031C7EF3760036AEE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8403360E1C7EF3760036AEE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		840335E81C7EF3760036AEE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840336501C805AC70036AEE7 /* HLLTimeZoneManager.h in Sources */,
+				840336511C805AC70036AEE7 /* HLLTimeZoneManager.m in Sources */,
+				840336431C804C530036AEE7 /* NSArray+Sort.m in Sources */,
+				840335F71C7EF3760036AEE7 /* ViewController.m in Sources */,
+				840335F41C7EF3760036AEE7 /* AppDelegate.m in Sources */,
+				8403364E1C805A440036AEE7 /* HLLSortA_ZDataSource.m in Sources */,
+				840336401C8042ED0036AEE7 /* HLLSortObject.m in Sources */,
+				8403364F1C805A440036AEE7 /* HLLSortRegionsDataSource.m in Sources */,
+				8403363B1C8042E60036AEE7 /* HLLTimeZoneWrapper.m in Sources */,
+				840336391C8042E60036AEE7 /* HLLRegion.m in Sources */,
+				840335F11C7EF3760036AEE7 /* main.m in Sources */,
+				840336541C83D6780036AEE7 /* HLLSortLocalizedIndexedCollationDataSource.m in Sources */,
+				D7D4F40C1CBC2A7400E3C937 /* HLLNormalDataSource.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		840336011C7EF3760036AEE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8403360A1C7EF3760036AEE7 /* HLLTimeZoneTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8403360C1C7EF3760036AEE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840336151C7EF3760036AEE7 /* HLLTimeZoneUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		840336071C7EF3760036AEE7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 840335EB1C7EF3760036AEE7 /* HLLTimeZone */;
+			targetProxy = 840336061C7EF3760036AEE7 /* PBXContainerItemProxy */;
+		};
+		840336121C7EF3760036AEE7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 840335EB1C7EF3760036AEE7 /* HLLTimeZone */;
+			targetProxy = 840336111C7EF3760036AEE7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		840335F81C7EF3760036AEE7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				840335F91C7EF3760036AEE7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		840335FD1C7EF3760036AEE7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				840335FE1C7EF3760036AEE7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		840336171C7EF3760036AEE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		840336181C7EF3760036AEE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8403361A1C7EF3760036AEE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HLLTimeZone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HLL.HLLTimeZone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8403361B1C7EF3760036AEE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HLLTimeZone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HLL.HLLTimeZone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8403361D1C7EF3760036AEE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HLLTimeZoneTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HLL.HLLTimeZoneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HLLTimeZone.app/HLLTimeZone";
+			};
+			name = Debug;
+		};
+		8403361E1C7EF3760036AEE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HLLTimeZoneTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HLL.HLLTimeZoneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HLLTimeZone.app/HLLTimeZone";
+			};
+			name = Release;
+		};
+		840336201C7EF3760036AEE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HLLTimeZoneUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HLL.HLLTimeZoneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HLLTimeZone;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		840336211C7EF3760036AEE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HLLTimeZoneUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HLL.HLLTimeZoneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HLLTimeZone;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		840335E71C7EF3760036AEE7 /* Build configuration list for PBXProject "HLLTimeZone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				840336171C7EF3760036AEE7 /* Debug */,
+				840336181C7EF3760036AEE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		840336191C7EF3760036AEE7 /* Build configuration list for PBXNativeTarget "HLLTimeZone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8403361A1C7EF3760036AEE7 /* Debug */,
+				8403361B1C7EF3760036AEE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8403361C1C7EF3760036AEE7 /* Build configuration list for PBXNativeTarget "HLLTimeZoneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8403361D1C7EF3760036AEE7 /* Debug */,
+				8403361E1C7EF3760036AEE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8403361F1C7EF3760036AEE7 /* Build configuration list for PBXNativeTarget "HLLTimeZoneUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				840336201C7EF3760036AEE7 /* Debug */,
+				840336211C7EF3760036AEE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 840335E41C7EF3760036AEE7 /* Project object */;
+}
